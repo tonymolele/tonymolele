@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Tony Molele - Personal Site</title>
+
+        <link rel="stylesheet" href="Styles/Main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=VT323&display=swap">
+
+    </head>
+
+    <body>
+
+        <canvas id="Canvas3D"></canvas>
+
+        <div id="MainDiv">
+
+            <div id="MouseGlow"></div>
+            <div id="MouseGlowBlur"></div>
+                
+            <div id="RightPanel">
+
+                <div id="Section1" class="Section">
+                    <h2>About</h2>
+                    <p>I'm a passionate <m>IT professional</m> and <m>graphic designer</m> with a strong foundation in both technical and creative domains. Through my experiences at <m>EEC</m> and <m>CISCO NetAcad</m>, I've developed expertise in <m>IT support</m>, <m>network management</m>, and <m>creative design</m>.<br><br>My journey includes managing <m>computer labs</m>, providing <m>technical support</m>, and creating engaging <m>visual content</m>. I excel in <m>problem-solving</m>, <m>communication</m>, and <m>project management</m>. I'm proficient in <m>Adobe Creative Suite</m>, <m>Microsoft Office</m>, and various <m>IT management tools</m>.</p>
+                </div>
+                
+                <div id="Section2" class="Section">
+                    <h2>Projects & Experience</h2>
+                    <p>Here are some highlights from my professional experience and key projects:</p>
+                    <br>
+
+                    <a href="#" target="_blank" class="Project">
+                        <p data-value="Outlier AI - Prompt Engineer " style="color: white; font-weight: bold; white-space: pre;">Outlier AI - Prompt Engineer </p>
+                        <p data-value="AI prompt Development">AI prompt Development</p>
+                        <div class="Separator"></div>
+                        <p data-value="2023-Present">2024-Present</p>
+                    </a>
+
+                    <a href="#" target="_blank" class="Project">
+                        <p data-value="EEC - Network IT Technician (intern) " style="color: white; font-weight: bold; white-space: pre;">EEC - Network IT Technician (intern)</p>
+                        <p data-value="Troubleshooting & networking"> Networking(CCNA)</p>
+                        <div class="Separator"></div>
+                        <p data-value="2022-2023">2022-2024</p>
+                    </a>
+
+                    <a href="#" target="_blank" class="Project">
+                        <p data-value="Graphic Design Portfolio " style="color: white; font-weight: bold; white-space: pre;">Graphic Design Portfolio </p>
+                        <p data-value="Branding, Social Media & Print Design">Branding, Social Media & Print Design</p>
+                        <div class="Separator"></div>
+                        <p data-value="2020-Present">2020-Present</p>
+                    </a>
+                </div>
+
+                <div id="Section3" class="Section">
+                    <h2>Skills</h2>
+                    <p>My diverse skill set includes:<br><br>
+                    <m>Technical Skills:</m> Network Management, Hardware Maintenance, System Administration, Troubleshooting<br><br>
+                    <m>Design Skills:</m> Adobe Photoshop, Illustrator, InDesign, Social Media Design, Print Design<br><br>
+                    <m>Soft Skills:</m> Problem-solving, Communication, Team Leadership, Project Management, Training & Development</p>
+                </div>
+
+                <p style="padding-bottom: 95.0vh; font-size: 1.25vh;">Developed by <m>Tony Molele</m> using <m>HTML</m>, <m>CSS</m>, <m>JavaScript</m> and <m>WebGL2</m>.</p>
+            </div>
+
+            <div id="LeftPanel">
+    
+                <h1>Tony Molele</h1>
+                <h2>IT Professional & Graphic Designer</h2>
+                <p>Combining technical expertise with creative<br>design to deliver comprehensive IT and<br>visual solutions.</p>
+                
+                <nav class="NavContainer">
+
+                  <div class="NavItem" DataSection="Section1">
+                      <div class="NavItemDot"></div>
+                      <span class="NavItemText">About</span>
+                  </div>
+
+                  <div class="NavItem" DataSection="Section2">
+                      <div class="NavItemDot"></div>
+                      <span class="NavItemText">Projects & Experience</span>
+                  </div>
+
+                  <div class="NavItem" DataSection="Section3">
+                      <div class="NavItemDot"></div>
+                      <span class="NavItemText">Skills</span>
+                  </div>
+
+                </nav>
+
+                <div id="SocialsContainer">
+                    
+                    <a href="https://github.com/tonyteezy" target="_blank" title="Github">
+                        <img src="Images/GithubIcon.png" alt="Github" style="width:30px;height:30px;">
+                    </a>
+
+                    <a href="mailto:moleletony36@gmail.com" target="_blank" title="Email">
+                        <img src="Images/EmailIcon.png" alt="Email" style="width:30px;height:30px;">
+                    </a>
+
+                    <a href="Tony Molele Modern Resume(CV)(SysAdmin).pdf" target="_blank" title="CV">
+                        <img src="Images/CVIcon.png" alt="CV" style="width:30px;height:30px;">
+                    </a>
+
+                    <div class="like-container">
+                        <button id="likeButton" class="like-button" aria-label="Like profile">
+                            <i class="heart-icon">❤</i>
+                            <span id="likeCount">0</span>
+                        </button>
+                        <div class="like-input-container">
+                            <input type="text" id="likeName" placeholder="Your name" maxlength="30">
+                            <button id="submitLike">Send</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <button id="MainButton">🠛</button>
+
+        <audio id="BackroundMusic" src="Sounds/yung kai-blue-official-audio.mp3" loop></audio>
+        <audio id="ComputerBoot" src="Sounds/ComputerBoot.mp3"></audio>
+        <audio id="ComputerAmbient" src="Sounds/ComputerAmbient.mp3"></audio>
+        <audio id="ComputerBeep" src="Sounds/ComputerBeep.mp3"></audio>
+        <audio id="KeyboardPressed" src="Sounds/KeyboardPressed.mp3"></audio>
+
+        <script src="Scripts/server.js"></script>
+        <script src="Scripts/ModelFiles.js"></script>
+        <script src="Scripts/RenderingFunctions.js"></script>
+        <script src="Scripts/TerminalFunction.js"></script>
+        <script src="Scripts/Main.js"></script>
+
+    </body>
+
+</html>
